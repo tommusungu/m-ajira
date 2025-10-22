@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center ">
           <Link to="/" className="flex items-center space-x-2 py-2">
-      <div className="w-28 lg:w-44   overflow-hidden flex items-center justify-center ">
+      <div className="w-36 lg:w-44   overflow-hidden flex items-center justify-center ">
         <img
           src={logo}
           alt="M-Ajira Logo"
