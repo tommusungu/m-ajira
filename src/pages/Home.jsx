@@ -28,6 +28,7 @@ export default function Home() {
       {/* <CompaniesSection /> */}
      
       <FeaturedJobsSection jobs={featuredJobs} />
+      <AboutSection/>
        <HowItWorksSection />
       <ExploreJobsSection />
       {/* <CategoriesSection /> */}
@@ -120,7 +121,81 @@ function HeroSection() {
   );
 }
 
+function AboutSection() {
+  return (
+    <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-16 overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50/30 to-white">
+      <div className="absolute top-20 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"></div>
 
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Images on the left */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
+            <div className="relative z-10 grid grid-cols-2 gap-4 h-[500px]">
+              {/* Taller image on the left */}
+              <div className="relative h-full">
+                <img
+                  src="https://images.pexels.com/photos/8486978/pexels-photo-8486978.jpeg"
+                  alt="Professional"
+                  className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Shorter image on the right, centered vertically */}
+              <div className="relative flex items-center">
+                <img
+                  src="https://images.pexels.com/photos/8486935/pexels-photo-8486935.jpeg"
+                  alt="Professional"
+                  className="rounded-2xl shadow-2xl w-full h-[350px] object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Decorative elements */}
+            <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full opacity-50"></div>
+            <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-green-400 to-green-200 rounded-full opacity-50"></div>
+          </motion.div>
+
+          {/* Text content on the right */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <p className="text-gray-500 mb-2">
+              About M-Ajira
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
+              M-Ajira Helps You <br />
+              <span className="text-blue-500"> Get Your Dream Job</span><br />
+               And Build Your
+              Bright Career.
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-lg">
+              It is your number one job offering platform offering various categories of jobs from business, research, education, engineering, health, production, marketing, architecture etc. We offer both casual and corporate jobs from sales officer to photography.
+            </p>
+
+            <div className="flex gap-3 md:gap-4 mb-8">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 md:px-8 py-3 bg-primary text-white rounded font-medium shadow-lg hover:bg-primary/90 transition-colors"
+              >
+                Learn More
+              </motion.button>
+              
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
 // function CompaniesSection() {
 //   const companies = [
 //     { name: 'Safaricom', icon: '📱' },
