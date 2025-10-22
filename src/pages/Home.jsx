@@ -62,19 +62,19 @@ function HeroSection() {
               Upload your CV and get connected to thousands of Employers Abroad
             </p>
 
-            <div className="flex flex-wrap gap-4 mb-8">
+            <div className="flex  gap-3 md:gap-4 mb-8">
                <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={() => navigate("/jobs")}
-      className="px-8 py-3 bg-primary text-white rounded font-medium shadow-lg hover:bg-primary/90 transition-colors"
+      className="px-6 md:px-8 py-3 bg-primary text-white rounded font-medium shadow-lg hover:bg-primary/90 transition-colors"
     >
       Get Started
     </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3  bg-blue-600 text-white rounded font-medium shadow-md hover:shadow-lg transition-all flex items-center space-x-2"
+                className="px-6 md:px-8 py-3  bg-blue-600 text-white rounded font-medium shadow-md hover:shadow-lg transition-all flex items-center space-x-2"
               >
                 <span>Watch Video</span>
               </motion.button>
