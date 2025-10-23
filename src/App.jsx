@@ -8,10 +8,14 @@ import Register from './pages/Register';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import Dashboard from './pages/Dashboard';
+import useScrollToTop from './hooks/useScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTopWrapper/>
+
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
@@ -22,6 +26,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
@@ -30,5 +35,8 @@ function App() {
     </Router>
   );
 }
-
+function ScrollToTopWrapper() {
+  useScrollToTop();
+  return null;
+}
 export default App;

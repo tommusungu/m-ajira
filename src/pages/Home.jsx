@@ -136,29 +136,55 @@ function AboutSection() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative z-10 grid grid-cols-2 gap-4 h-[500px]">
-              {/* Taller image on the left */}
-              <div className="relative h-full">
-                <img
-                  src="https://images.pexels.com/photos/8486978/pexels-photo-8486978.jpeg"
-                  alt="Professional"
-                  className="rounded-2xl shadow-2xl w-full h-full object-cover"
-                />
-              </div>
+           
 
-              {/* Shorter image on the right, centered vertically */}
-              <div className="relative flex items-center">
-                <img
-                  src="https://images.pexels.com/photos/8486935/pexels-photo-8486935.jpeg"
-                  alt="Professional"
-                  className="rounded-2xl shadow-2xl w-full h-[350px] object-cover"
-                />
-              </div>
-            </div>
+            <div className="z-10 grid grid-cols-2 gap-4">
+  {/* Left Column */}
+  <div className="space-y-4">
+    {/* Shorter Image */}
+    <div className="relative h-48 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="https://images.pexels.com/photos/8486978/pexels-photo-8486978.jpeg"
+        alt="Child learning"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* Taller Image */}
+    <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="https://images.pexels.com/photos/8486935/pexels-photo-8486935.jpeg"
+        alt="Community gathering"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+
+  {/* Right Column */}
+  <div className="space-y-4 pt-8">
+    {/* Taller Image */}
+    <div className="relative h-72 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="https://images.pexels.com/photos/8486935/pexels-photo-8486935.jpeg"
+        alt="Happy children"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* Shorter Image */}
+    <div className="relative h-40 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="https://images.pexels.com/photos/8486978/pexels-photo-8486978.jpeg"
+        alt="Child drinking water"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</div>
 
             {/* Decorative elements */}
-            <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full opacity-50"></div>
-            <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-green-400 to-green-200 rounded-full opacity-50"></div>
+            {/* <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full opacity-50"></div>
+            <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-green-400 to-green-200 rounded-full opacity-50"></div> */}
           </motion.div>
 
           {/* Text content on the right */}

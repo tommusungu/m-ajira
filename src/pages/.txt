@@ -1,0 +1,43 @@
+<div className="grid grid-cols-2 gap-4">
+  {/* Left Column */}
+  <div className="space-y-4">
+    {/* Shorter Image */}
+    <div className="relative h-48 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="https://images.pexels.com/photos/27638638/pexels-photo-27638638.jpeg?auto=compress&cs=tinysrgb&w=400"
+        alt="Child learning"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* Taller Image */}
+    <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="https://images.pexels.com/photos/28101461/pexels-photo-28101461.jpeg?auto=compress&cs=tinysrgb&w=400"
+        alt="Community gathering"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+
+  {/* Right Column */}
+  <div className="space-y-4 pt-8">
+    {/* Taller Image */}
+    <div className="relative h-72 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="https://images.pexels.com/photos/15530747/pexels-photo-15530747.jpeg?auto=compress&cs=tinysrgb&w=400"
+        alt="Happy children"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* Shorter Image */}
+    <div className="relative h-40 rounded-lg overflow-hidden shadow-lg">
+      <img
+        src="https://images.pexels.com/photos/30598328/pexels-photo-30598328.jpeg?auto=compress&cs=tinysrgb&w=400"
+        alt="Child drinking water"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</div>
